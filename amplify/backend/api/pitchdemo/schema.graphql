@@ -1,0 +1,27 @@
+type PitchAnswer @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  pitch_num: Int
+  userID: ID! @index(name: "byUser")
+  pitchID: ID! @index(name: "byPitch")
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  email: AWSEmail
+  PitchAnswers: [PitchAnswer] @hasMany(indexName: "byUser", fields: ["id"])
+}
+
+type Pitch @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  go_live: AWSDateTime
+  author: String
+  title: String
+  content: String
+  question: String
+  answer_one: String
+  answer_two: String
+  answer_three: String
+  answer_four: String
+  answer_five: String
+  PitchAnswers: [PitchAnswer] @hasMany(indexName: "byPitch", fields: ["id"])
+}
