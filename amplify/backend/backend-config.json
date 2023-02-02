@@ -1,6 +1,6 @@
 {
   "api": {
-    "pitchdemo": {
+    "pitchDemo": {
       "dependsOn": [],
       "output": {
         "authConfig": {

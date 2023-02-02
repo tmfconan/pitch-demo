@@ -24,22 +24,18 @@ export default function PitchUpdateForm(props) {
     ...rest
   } = props;
   const initialValues = {
-    go_live: "",
-    author: "",
     title: "",
     content: "",
-    question: "",
     answer_one: "",
     answer_two: "",
     answer_three: "",
     answer_four: "",
     answer_five: "",
+    go_live: "",
+    author: "",
   };
-  const [go_live, setGo_live] = React.useState(initialValues.go_live);
-  const [author, setAuthor] = React.useState(initialValues.author);
   const [title, setTitle] = React.useState(initialValues.title);
   const [content, setContent] = React.useState(initialValues.content);
-  const [question, setQuestion] = React.useState(initialValues.question);
   const [answer_one, setAnswer_one] = React.useState(initialValues.answer_one);
   const [answer_two, setAnswer_two] = React.useState(initialValues.answer_two);
   const [answer_three, setAnswer_three] = React.useState(
@@ -51,21 +47,22 @@ export default function PitchUpdateForm(props) {
   const [answer_five, setAnswer_five] = React.useState(
     initialValues.answer_five
   );
+  const [go_live, setGo_live] = React.useState(initialValues.go_live);
+  const [author, setAuthor] = React.useState(initialValues.author);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     const cleanValues = pitchRecord
       ? { ...initialValues, ...pitchRecord }
       : initialValues;
-    setGo_live(cleanValues.go_live);
-    setAuthor(cleanValues.author);
     setTitle(cleanValues.title);
     setContent(cleanValues.content);
-    setQuestion(cleanValues.question);
     setAnswer_one(cleanValues.answer_one);
     setAnswer_two(cleanValues.answer_two);
     setAnswer_three(cleanValues.answer_three);
     setAnswer_four(cleanValues.answer_four);
     setAnswer_five(cleanValues.answer_five);
+    setGo_live(cleanValues.go_live);
+    setAuthor(cleanValues.author);
     setErrors({});
   };
   const [pitchRecord, setPitchRecord] = React.useState(pitch);
@@ -78,16 +75,15 @@ export default function PitchUpdateForm(props) {
   }, [idProp, pitch]);
   React.useEffect(resetStateValues, [pitchRecord]);
   const validations = {
-    go_live: [],
-    author: [],
     title: [],
     content: [],
-    question: [],
     answer_one: [],
     answer_two: [],
     answer_three: [],
     answer_four: [],
     answer_five: [],
+    go_live: [],
+    author: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -131,16 +127,15 @@ export default function PitchUpdateForm(props) {
       onSubmit={async (event) => {
         event.preventDefault();
         let modelFields = {
-          go_live,
-          author,
           title,
           content,
-          question,
           answer_one,
           answer_two,
           answer_three,
           answer_four,
           answer_five,
+          go_live,
+          author,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -188,74 +183,6 @@ export default function PitchUpdateForm(props) {
       {...rest}
     >
       <TextField
-        label="Go live"
-        isRequired={false}
-        isReadOnly={false}
-        type="datetime-local"
-        value={go_live && convertToLocal(new Date(go_live))}
-        onChange={(e) => {
-          let value =
-            e.target.value === "" ? "" : new Date(e.target.value).toISOString();
-          if (onChange) {
-            const modelFields = {
-              go_live: value,
-              author,
-              title,
-              content,
-              question,
-              answer_one,
-              answer_two,
-              answer_three,
-              answer_four,
-              answer_five,
-            };
-            const result = onChange(modelFields);
-            value = result?.go_live ?? value;
-          }
-          if (errors.go_live?.hasError) {
-            runValidationTasks("go_live", value);
-          }
-          setGo_live(value);
-        }}
-        onBlur={() => runValidationTasks("go_live", go_live)}
-        errorMessage={errors.go_live?.errorMessage}
-        hasError={errors.go_live?.hasError}
-        {...getOverrideProps(overrides, "go_live")}
-      ></TextField>
-      <TextField
-        label="Author"
-        isRequired={false}
-        isReadOnly={false}
-        value={author}
-        onChange={(e) => {
-          let { value } = e.target;
-          if (onChange) {
-            const modelFields = {
-              go_live,
-              author: value,
-              title,
-              content,
-              question,
-              answer_one,
-              answer_two,
-              answer_three,
-              answer_four,
-              answer_five,
-            };
-            const result = onChange(modelFields);
-            value = result?.author ?? value;
-          }
-          if (errors.author?.hasError) {
-            runValidationTasks("author", value);
-          }
-          setAuthor(value);
-        }}
-        onBlur={() => runValidationTasks("author", author)}
-        errorMessage={errors.author?.errorMessage}
-        hasError={errors.author?.hasError}
-        {...getOverrideProps(overrides, "author")}
-      ></TextField>
-      <TextField
         label="Title"
         isRequired={false}
         isReadOnly={false}
@@ -264,16 +191,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title: value,
               content,
-              question,
               answer_one,
               answer_two,
               answer_three,
               answer_four,
               answer_five,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.title ?? value;
@@ -297,16 +223,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title,
               content: value,
-              question,
               answer_one,
               answer_two,
               answer_three,
               answer_four,
               answer_five,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.content ?? value;
@@ -322,39 +247,6 @@ export default function PitchUpdateForm(props) {
         {...getOverrideProps(overrides, "content")}
       ></TextField>
       <TextField
-        label="Question"
-        isRequired={false}
-        isReadOnly={false}
-        value={question}
-        onChange={(e) => {
-          let { value } = e.target;
-          if (onChange) {
-            const modelFields = {
-              go_live,
-              author,
-              title,
-              content,
-              question: value,
-              answer_one,
-              answer_two,
-              answer_three,
-              answer_four,
-              answer_five,
-            };
-            const result = onChange(modelFields);
-            value = result?.question ?? value;
-          }
-          if (errors.question?.hasError) {
-            runValidationTasks("question", value);
-          }
-          setQuestion(value);
-        }}
-        onBlur={() => runValidationTasks("question", question)}
-        errorMessage={errors.question?.errorMessage}
-        hasError={errors.question?.hasError}
-        {...getOverrideProps(overrides, "question")}
-      ></TextField>
-      <TextField
         label="Answer one"
         isRequired={false}
         isReadOnly={false}
@@ -363,16 +255,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title,
               content,
-              question,
               answer_one: value,
               answer_two,
               answer_three,
               answer_four,
               answer_five,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.answer_one ?? value;
@@ -396,16 +287,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title,
               content,
-              question,
               answer_one,
               answer_two: value,
               answer_three,
               answer_four,
               answer_five,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.answer_two ?? value;
@@ -429,16 +319,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title,
               content,
-              question,
               answer_one,
               answer_two,
               answer_three: value,
               answer_four,
               answer_five,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.answer_three ?? value;
@@ -462,16 +351,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title,
               content,
-              question,
               answer_one,
               answer_two,
               answer_three,
               answer_four: value,
               answer_five,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.answer_four ?? value;
@@ -495,16 +383,15 @@ export default function PitchUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
-              go_live,
-              author,
               title,
               content,
-              question,
               answer_one,
               answer_two,
               answer_three,
               answer_four,
               answer_five: value,
+              go_live,
+              author,
             };
             const result = onChange(modelFields);
             value = result?.answer_five ?? value;
@@ -518,6 +405,72 @@ export default function PitchUpdateForm(props) {
         errorMessage={errors.answer_five?.errorMessage}
         hasError={errors.answer_five?.hasError}
         {...getOverrideProps(overrides, "answer_five")}
+      ></TextField>
+      <TextField
+        label="Go live"
+        isRequired={false}
+        isReadOnly={false}
+        type="datetime-local"
+        value={go_live && convertToLocal(new Date(go_live))}
+        onChange={(e) => {
+          let value =
+            e.target.value === "" ? "" : new Date(e.target.value).toISOString();
+          if (onChange) {
+            const modelFields = {
+              title,
+              content,
+              answer_one,
+              answer_two,
+              answer_three,
+              answer_four,
+              answer_five,
+              go_live: value,
+              author,
+            };
+            const result = onChange(modelFields);
+            value = result?.go_live ?? value;
+          }
+          if (errors.go_live?.hasError) {
+            runValidationTasks("go_live", value);
+          }
+          setGo_live(value);
+        }}
+        onBlur={() => runValidationTasks("go_live", go_live)}
+        errorMessage={errors.go_live?.errorMessage}
+        hasError={errors.go_live?.hasError}
+        {...getOverrideProps(overrides, "go_live")}
+      ></TextField>
+      <TextField
+        label="Author"
+        isRequired={false}
+        isReadOnly={false}
+        value={author}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              title,
+              content,
+              answer_one,
+              answer_two,
+              answer_three,
+              answer_four,
+              answer_five,
+              go_live,
+              author: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.author ?? value;
+          }
+          if (errors.author?.hasError) {
+            runValidationTasks("author", value);
+          }
+          setAuthor(value);
+        }}
+        onBlur={() => runValidationTasks("author", author)}
+        errorMessage={errors.author?.errorMessage}
+        hasError={errors.author?.hasError}
+        {...getOverrideProps(overrides, "author")}
       ></TextField>
       <Flex
         justifyContent="space-between"

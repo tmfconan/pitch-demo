@@ -1,7 +1,7 @@
 {
   "version": 1,
   "serviceConfiguration": {
-    "apiName": "pitchdemo",
+    "apiName": "pitchDemo",
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "API_KEY",

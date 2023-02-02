@@ -10,22 +10,15 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "pitch_num": {
-                    "name": "pitch_num",
-                    "isArray": false,
-                    "type": "Int",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "userID": {
-                    "name": "userID",
+                "pitchID": {
+                    "name": "pitchID",
                     "isArray": false,
                     "type": "ID",
                     "isRequired": true,
                     "attributes": []
                 },
-                "pitchID": {
-                    "name": "pitchID",
+                "userID": {
+                    "name": "userID",
                     "isArray": false,
                     "type": "ID",
                     "isRequired": true,
@@ -58,18 +51,18 @@ export const schema = {
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byUser",
+                        "name": "byPitch",
                         "fields": [
-                            "userID"
+                            "pitchID"
                         ]
                     }
                 },
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byPitch",
+                        "name": "byUser",
                         "fields": [
-                            "pitchID"
+                            "userID"
                         ]
                     }
                 },
@@ -176,20 +169,6 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "go_live": {
-                    "name": "go_live",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "author": {
-                    "name": "author",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
                 "title": {
                     "name": "title",
                     "isArray": false,
@@ -199,13 +178,6 @@ export const schema = {
                 },
                 "content": {
                     "name": "content",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "question": {
-                    "name": "question",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -241,6 +213,20 @@ export const schema = {
                 },
                 "answer_five": {
                     "name": "answer_five",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "go_live": {
+                    "name": "go_live",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "author": {
+                    "name": "author",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -308,5 +294,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.5",
-    "version": "6a46dbdf04eebb673018ef595ac77ac8"
+    "version": "ee8d715eb4f7a5ade59d6bc883eac412"
 };

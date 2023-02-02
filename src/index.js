@@ -11,15 +11,19 @@ import {ThemeProvider} from "@aws-amplify/ui-react";
 
 import awsconfig from './aws-exports';
 import studioTheme from './ui-components/studioTheme';
+import {BrowserRouter} from "react-router-dom";
+import {Pitch} from "./models"
 
 Amplify.configure(awsconfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <BrowserRouter>
     <ThemeProvider theme={studioTheme}>
         <App />
     </ThemeProvider>
+          </BrowserRouter>
   </React.StrictMode>
 );
 

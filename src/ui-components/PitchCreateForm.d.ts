@@ -13,42 +13,39 @@ export declare type ValidationResponse = {
 };
 export declare type ValidationFunction<T> = (value: T, validationResponse: ValidationResponse) => ValidationResponse | Promise<ValidationResponse>;
 export declare type PitchCreateFormInputValues = {
-    go_live?: string;
-    author?: string;
     title?: string;
     content?: string;
-    question?: string;
     answer_one?: string;
     answer_two?: string;
     answer_three?: string;
     answer_four?: string;
     answer_five?: string;
+    go_live?: string;
+    author?: string;
 };
 export declare type PitchCreateFormValidationValues = {
-    go_live?: ValidationFunction<string>;
-    author?: ValidationFunction<string>;
     title?: ValidationFunction<string>;
     content?: ValidationFunction<string>;
-    question?: ValidationFunction<string>;
     answer_one?: ValidationFunction<string>;
     answer_two?: ValidationFunction<string>;
     answer_three?: ValidationFunction<string>;
     answer_four?: ValidationFunction<string>;
     answer_five?: ValidationFunction<string>;
+    go_live?: ValidationFunction<string>;
+    author?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type PitchCreateFormOverridesProps = {
     PitchCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
-    go_live?: PrimitiveOverrideProps<TextFieldProps>;
-    author?: PrimitiveOverrideProps<TextFieldProps>;
     title?: PrimitiveOverrideProps<TextFieldProps>;
     content?: PrimitiveOverrideProps<TextFieldProps>;
-    question?: PrimitiveOverrideProps<TextFieldProps>;
     answer_one?: PrimitiveOverrideProps<TextFieldProps>;
     answer_two?: PrimitiveOverrideProps<TextFieldProps>;
     answer_three?: PrimitiveOverrideProps<TextFieldProps>;
     answer_four?: PrimitiveOverrideProps<TextFieldProps>;
     answer_five?: PrimitiveOverrideProps<TextFieldProps>;
+    go_live?: PrimitiveOverrideProps<TextFieldProps>;
+    author?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type PitchCreateFormProps = React.PropsWithChildren<{
     overrides?: PitchCreateFormOverridesProps | undefined | null;

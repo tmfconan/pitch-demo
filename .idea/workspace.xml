@@ -5,12 +5,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aec32d7-76be-4f3d-85e9-1c4b41784a70" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/.config/project-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/.config/project-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pitchdemo/cli-inputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pitchdemo/cli-inputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pitchdemo/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pitchdemo/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pitchdemo/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pitchdemo/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/types/amplify-dependent-resources-ref.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/types/amplify-dependent-resources-ref.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ActionCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ActionCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Ampligram.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Ampligram.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/CommentCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/CommentCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ContactUs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ContactUs.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/CreatePitch.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/CreatePitch.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/CreatePitchCollection.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/CreatePitchCollection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/EditProfile.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/EditProfile.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/FAQItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/FAQItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Features2x2.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Features2x2.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Features2x3.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Features2x3.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Features4x1.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/Features4x1.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/FeaturesText2x2.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/FeaturesText2x2.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout1.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout1.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout2.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout2.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout3.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout3.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout4.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/HeroLayout4.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ItemCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ItemCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/MarketingFooter.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/MarketingFooter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/MarketingPricing.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/MarketingPricing.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/MyIcon.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/MyIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/NavBar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/NavBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/PitchAnswerForm.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/PitchAnswerForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/PitchCreateForm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/PitchCreateForm.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/PitchCreateForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/PitchCreateForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/PitchUpdateForm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/PitchUpdateForm.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/PitchUpdateForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/PitchUpdateForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ProductCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ProductCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ProductDetail.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ProductDetail.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ProfileCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ProfileCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ReviewCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/ReviewCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/SideBar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/SideBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/SocialPost.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/SocialPost.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/StandardCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/StandardCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/TallCard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/TallCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-components/studioTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-components/studioTheme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,20 +104,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maxk/codes/pitch-demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/maxk/codes/pitch-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/PyCharm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -60,7 +137,9 @@
       <option name="presentableId" value="Default" />
       <updated>1675183929352</updated>
       <workItem from="1675183930807" duration="1518000" />
-      <workItem from="1675201985706" duration="991000" />
+      <workItem from="1675201985706" duration="1063000" />
+      <workItem from="1675277060553" duration="631000" />
+      <workItem from="1675277804932" duration="4481000" />
     </task>
     <servers />
   </component>

@@ -12,9 +12,8 @@ type EagerPitchAnswer = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly pitch_num?: number | null;
-  readonly userID: string;
   readonly pitchID: string;
+  readonly userID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -25,9 +24,8 @@ type LazyPitchAnswer = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly pitch_num?: number | null;
-  readonly userID: string;
   readonly pitchID: string;
+  readonly userID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -74,16 +72,15 @@ type EagerPitch = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly go_live?: string | null;
-  readonly author?: string | null;
   readonly title?: string | null;
   readonly content?: string | null;
-  readonly question?: string | null;
   readonly answer_one?: string | null;
   readonly answer_two?: string | null;
   readonly answer_three?: string | null;
   readonly answer_four?: string | null;
   readonly answer_five?: string | null;
+  readonly go_live?: string | null;
+  readonly author?: string | null;
   readonly PitchAnswers?: (PitchAnswer | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
@@ -95,16 +92,15 @@ type LazyPitch = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly go_live?: string | null;
-  readonly author?: string | null;
   readonly title?: string | null;
   readonly content?: string | null;
-  readonly question?: string | null;
   readonly answer_one?: string | null;
   readonly answer_two?: string | null;
   readonly answer_three?: string | null;
   readonly answer_four?: string | null;
   readonly answer_five?: string | null;
+  readonly go_live?: string | null;
+  readonly author?: string | null;
   readonly PitchAnswers: AsyncCollection<PitchAnswer>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
